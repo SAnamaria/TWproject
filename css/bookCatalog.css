@@ -1,0 +1,17 @@
+@charset "utf-8";
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+#istoric {
+	display:block;
+}
+
+#carti {
+	margin-left: 5px;
+}

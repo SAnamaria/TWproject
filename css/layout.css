@@ -1,0 +1,76 @@
+@charset "utf-8";
+body {
+	background-color: #FAEBD6;
+	background-repeat: repeat;
+}
+body, td, th {
+	font-family: "Bookman Old Style", Calibri, Century, "Century Gothic";
+	text-transform: none;
+}
+.container {
+	width: 1000px;
+	margin: auto;
+	padding: 0px;
+	background: #F2E2B3;
+	color: #333;
+	line-height: 1.5em;
+}
+.content {
+	padding: 0px 0;
+}
+.banner {
+	width: 1000px;
+	background-image: url(../images/base/banner.jpg);
+	background-position: center;
+	margin: 0 auto;
+}
+.topnav .search-container {
+	float: right;
+}
+.topnav input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 17px;
+	border: none;
+}
+.topnav .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+.topnav .search-container button:hover {
+	background: #ccc;
+}
+#leftnav {
+	float: left;
+	width: 250px;
+	height: 1400px;
+	margin: 0;
+	padding: 5px;
+	color: #EAE8D0;
+	background: #661a00;
+}
+#leftnav h3 {
+	text-align: center;
+	font-size: 24px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#leftnav ul {
+	list-style: none;
+}
+#leftnav ul li {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 16px;
+	list-style: disc;
+}
+#main {
+	margin: 0px 0 0 200px;
+	padding: 5px;
+	background: #F2E2B3;
+}

@@ -1,0 +1,77 @@
+@charset "utf-8";
+label {
+	word-spacing: 1px;
+}
+.form {
+	margin-left: 50px;
+	width: 715px;
+	padding: 15px;
+	background-color: white;
+	font-family: "Bookman Old Style", Calibri, Century, "Century Gothic";
+}
+#option {
+	width: 99%;
+	height: 50px;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+	text-align: center;
+}
+input[type=radio] {
+	width: 2%;
+}
+input[type=text], input[type=password], input[type=email] {
+	width: 95%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+.registerbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+.registerbtn:hover {
+	opacity: 1;
+}
+a.registerform {
+	color: dodgerblue;
+}
+.signin {
+	background-color: #f1f1f1;
+	text-align: center;
+	width: 100%;
+}
+.radio_inline {
+	display: inline;
+}
+#number {
+	height: 10px;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+#confirm-message {
+	height: 5px;
+	padding: 5px;
+	margin: 5px 0 22px 0;
+}

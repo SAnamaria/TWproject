@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    
+    <!-- CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="css/gallery.css" rel="stylesheet" type="text/css">
+    
+    <!-- JAVASCRIPT -->
+	<script src="javascript/search.js" type="text/javascript">
+	</script>
+	<script src="javascript/settings.js">
+	</script>
+	<script src="javascript/timer.js">
+	</script>
+    
+    <!-- Phone -->
+	<link href="css/media-query-phone.css" media="only screen and (min-width:320px) and (max-width:480px) and (orientation: portrait)" rel="stylesheet" type="text/css">
+    <!-- Tablet -->
+	<link href="css/media-query-tablet.css" media="only screen and (min-width:768px) and (max-width:1024px)" rel="stylesheet" type="text/css">
+	
+    <title>Biblioteca Olympus</title>
+	<link href="images/base/favicon.png" rel="shortcut icon" type="image/png">
+</head>
+<body onload="startTime()">
+	<div id="timer"></div>
+	<div class="container">
+		<div class="banner">
+			<div class="content">
+				<h1 id="title"><a href="index.html">Biblioteca Olympus</a></h1>
+				<center>
+					<nav id="primary_nav_wrap">
+						<ul>
+							<li>
+								<a href="about.html">Despre noi</a>
+							</li>
+							<li>
+								<a href="evenimente.html">Evenimente</a>
+							</li>
+							<li>
+								<a>Categorii</a>
+								<ul>
+									<li>
+										<a href="fantasy.html">Fantasy</a>
+									</li>
+									<li>
+										<a href="comedy.html">Comedie</a>
+									</li>
+									<li>
+										<a href="romance.html">Romantic</a>
+									</li>
+									<li>
+										<a href="bio.html">Biografii</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="form.html">Inregistreaza-te!</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</center><br>
+				<br>
+				<center>
+					<div class="topnav">
+						<input id="myinput" name="search" onkeyup="searchFunction()" placeholder="Search..." type="text">
+					</div>
+				</center>
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/42265183-the-beautiful" target="_blank"><img alt="The Beautiful" src="images/romance/thebeautiful.jpg"> <span class="bookdesc">In 1872, New Orleans is a city ruled by the dead. But to seventeen-year-old Celine Rousseau, New Orleans provides her a refuge after she's forced to flee her life as a dressmaker in Paris. Taken in by the sisters of the Ursuline convent along with six other girls, Celine quickly becomes enamored with the vibrant city from the music to the food to the soirées and—especially—to the danger.</span></a>
+			</div>
+			<div class="desc">
+				The Beautiful<br>
+				(The Beautiful #1)<br>
+				by Renée Ahdieh
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/42930132-the-library-of-lost-things" target="_blank"><img alt="The Library of Lost Things" src="images/romance/thelibraryoflostthings.jpg"></a> <span class="bookdesc">From the moment she first learned to read, literary genius Darcy Wells has spent most of her time living in the worlds of her books. There, she can avoid the crushing reality of her mother’s hoarding and pretend her life is simply ordinary. But when a new property manager becomes more active in the upkeep of their apartment complex, the only home Darcy has ever known outside of her books suddenly hangs in the balance.</span>
+			</div>
+			<div class="desc">
+				The Library of Lost Things<br>
+				by Laura Taylor Namey
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/44650074-gypsy-king" target="_blank"><img alt="Gypsy King" src="images/romance/gypsyking.jpg"></a> <span class="bookdesc">The former Tin Gypsy motorcycle club has everyone in Clifton Forge, Montana convinced they’ve locked their clubhouse doors and ripped off their patches. Everyone but Bryce Ryan. There’s more happening at the club’s garage than muscle car restorations and Harley rebuilds. Her instincts are screaming there’s a story—one she’s going to tell.</span>
+			</div>
+			<div class="desc">
+				Gypsy King<br>
+				(Tin Gypsy #1)<br>
+				by Devney Perry
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/41957126-verity" target="_blank"><img alt="Verity" src="images/romance/verity.jpg"></a> <span class="bookdesc">Lowen Ashleigh is a struggling writer on the brink of financial ruin when she accepts the job offer of a lifetime. Jeremy Crawford, husband of bestselling author Verity Crawford, has hired Lowen to complete the remaining books in a successful series his injured wife is unable to finish.</span>
+			</div>
+			<div class="desc">
+				Verity<br>
+				by Colleen Hoover
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/36464087-ghosted" target="_blank"><img alt="Ghosted" src="images/romance/ghosted.jpg"></a> <span class="bookdesc">When Sarah meets Eddie, they connect instantly and fall in love. To Sarah, it seems as though her life has finally begun. And it's mutual: It's as though Eddie has been waiting for her, too. Sarah has never been so certain of anything. So when Eddie leaves for a long-booked vacation and promises to call from the airport, she has no cause to doubt him. But he doesn't call.</span>
+			</div>
+			<div class="desc">
+				Ghosted<br>
+				by Rosie Walsh
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/40864790-pumpkinheads" target="_blank"><img alt="Pumpkinheads" src="images/romance/pumpkinheads.jpg"></a> <span class="bookdesc">Deja and Josiah are seasonal best friends.<br>
+				Every autumn, all through high school, they’ve worked together at the best pumpkin patch in the whole wide world. (Not many people know that the best pumpkin patch in the whole wide world is in Omaha, Nebraska, but it definitely is.) They say good-bye every Halloween, and they’re reunited every September 1.</span>
+			</div>
+			<div class="desc">
+				Pumpkinheads<br>
+				by Rainbow Rowell
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/43263486-the-widow-of-rose-house" target="_blank"><img alt="The Widow of Rose House" src="images/romance/thewidowofrosehouse.jpg"></a> <span class="bookdesc">A young widow restores a dilapidated mansion with the assistance of a charming, eccentric genius, only to find the house is full of dangerous secrets in this effervescent Gilded Age debut novel</span>
+			</div>
+			<div class="desc">
+				The Widow of Rose House<br>
+				by Diana Biller
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/42642042-beyond-the-black-door" target="_blank"><img alt="Beyond the Black Door" src="images/romance/beyondtheblackdoor.jpg"></a> <span class="bookdesc">Kamai was warned never to open the black door, but she didn't listen ...<br>
+				Everyone has a soul. Some are beautiful gardens, others are frightening dungeons. Soulwalkers―like Kamai and her mother―can journey into other people's souls while they sleep.</span>
+			</div>
+			<div class="desc">
+				Beyond the Black Door<br>
+				by A.M. Strickland
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/45186670-twice-in-a-blue-moon" target="_blank"><img alt="Twice in a Blue Moon" src="images/romance/twiceinabluemoon.jpg"></a> <span class="bookdesc">Sam Brandis was Tate Jones’s first: Her first love. Her first everything. Including her first heartbreak.<br>
+				During a whirlwind two-week vacation abroad, Sam and Tate fell for each other in only the way that first loves do: sharing all of their hopes, dreams, and deepest secrets along the way. Sam was the first, and only, person that Tate—the long-lost daughter of one of the world’s biggest film stars—ever revealed her identity to. So when it became clear her trust was misplaced, her world shattered for good.</span>
+			</div>
+			<div class="desc">
+				Twice in a Blue Moon<br>
+				by Christina Lauren
+			</div>
+		</div>
+	</div>
+</body>
+</html>

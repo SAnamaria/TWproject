@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <!-- CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/bookCatalog.css" rel="stylesheet" type="text/css">
+    <!-- JAVASCRIPT -->
+	<script src="javascript/settings.js">
+	</script>
+	<script src="javascript/timer.js">
+	</script>
+    <script src="javascript/bookCatalog.js">
+	</script>
+    <!-- Phone -->
+	<link href="css/media-query-phone.css" media="only screen and (min-width:320px) and (max-width:480px) and (orientation: portrait)" rel="stylesheet" type="text/css">
+    <!-- Tablet -->
+	<link href="css/media-query-tablet.css" media="only screen and (min-width:768px) and (max-width:1024px)" rel="stylesheet" type="text/css">
+	<title>Biblioteca Olympus</title>
+	<link href="images/base/favicon.png" rel="shortcut icon" type="image/png">
+</head>
+<body onload="startTime()">
+	<div id="timer"></div><button id="settings_button" onclick="formular()" title="setari"><img height="50" id="settings" src="images/base/Settings-icon.png" width="50"></button>
+	<div id="formatting">
+		<h2 align="center">Formatarea paginii</h2><label><b>Alegeti culoarea fundalului:</b></label> <select id="option_background" name="background">
+			<option selected="selected" value=''>
+				Selecteaza culoarea
+			</option>
+			<option value="red">
+				Rosu
+			</option>
+			<option value="black">
+				Negru
+			</option>
+			<option value="green">
+				Verde
+			</option>
+			<option value="blue">
+				Albastru
+			</option>
+		</select><br>
+		<label for="size"><b>Marime scris:</b></label> <input id="size" max="25" min="12" name="size" onmouseout="timeout()" type="number"><br>
+		<button id="submit_settings" onclick="formatare()" type="submit">Submit</button>
+	</div>
+	<div id="text-size">
+		<div class="container">
+			<div class="banner">
+				<div class="content">
+					<h1 id="title"><a href="index.html">Biblioteca Olympus</a></h1>
+					<center>
+						<nav id="primary_nav_wrap">
+							<ul>
+								<li>
+									<a href="about.html">Despre noi</a>
+								</li>
+								<li>
+									<a href="evenimente.html">Evenimente</a>
+								</li>
+								<li>
+									<a>Categorii</a>
+									<ul>
+										<li>
+											<a href="fantasy.html">Fantasy</a>
+										</li>
+										<li>
+											<a href="comedy.html">Comedie</a>
+										</li>
+										<li>
+											<a href="romance.html">Romantic</a>
+										</li>
+										<li>
+											<a href="bio.html">Biografii</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="form.html">Inregistreaza-te!</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</center><br>
+					<br>
+				</div>
+			</div>
+			<div id="leftnav">
+				<h3>Orar</h3>
+				<ul>
+					<li>Luni: 9:00-19:00</li>
+					<li>Marti: 9:00-19:00</li>
+					<li>Miercuri: 9:00-19:00</li>
+					<li>Joi: 9:00-19:00</li>
+					<li>Vineri: 9:00-19:00</li>
+					<li>Sambata: 10:00-19:00</li>
+					<li>Duminica: INCHIS</li>
+				</ul>
+			</div>
+			<div id="main">
+            
+            <button type="button" id="carti" onclick="loadXMLDoc()">Cartile de pe stoc</button>
+            <br><br>
+            <table id="demo"></table>
+            <div id="istoric">
+				<p style="font-size:12px"></p>
+				<h1>Scurt istoric</h1>
+				<p><img alt="Biblioteca" class="imgright" src="images/library/library3.jpg" width="300"> Capitolul cel mai important din biografia Bibliotecii Olympus poate fi considerat anul 1955 când a fost înfiinţată (prin H.C.M. nr. 1193/ 25.06.1955) Biblioteca Centrală de Stat, ca principală bibliotecă publică a ţării, o instituţie creată pe baze biblioteconomice moderne, având atribuţiile specifice unei biblioteci naţionale, conform standardelor UNESCO.<br>
+				<br>
+				Potrivit celor mai mulţi istorici şi cercetători, Biblioteca Olympus îşi găseşte originile într-una dintre cele mai vechi şi reprezentative biblioteci din România - Biblioteca Colegiului Sf. Sava din Bucureşti. Aceasta şi-a deschis colecţiile către publicul larg în anul 1838, atunci când au fost catalogate aproximativ 1000 de volume de carte franţuzească. După Unirea din 1859, aceasta a obţinut statutul de bibliotecă naţională, primind alternativ denumirea de Biblioteca Olympus. În anul 1864, prin legea Reglementărilor publice, este numită Biblioteca Centrală a Statului, denumire şi statut păstrate până în anul 1901, când este desfiinţată, iar colecţiile sale sunt transferate Bibliotecii Academiei Române care primeşte statutul de bibliotecă naţională. Pentru perioada aceasta doar o singură funcţie naţională poate fi considerată relevantă pentru bibliotecă şi anume, funcţia patrimonială. În anul 1955 fondul de carte revine noii biblioteci înfiinţate - Biblioteca Centrală de Stat, principala bibliotecă publică din România.<br>
+				<br>
+				Imediat după prăbuşirea comunismului, la începutul lunii ianuarie 1990, Biblioteca Centrală de Stat a devenit Biblioteca Olympus, ca urmare a deciziei adoptate de noua putere, iar după intrarea României în Uniunea Europeană aceasta îşi dezvoltă funcţiile, implicându-se activ în numeroase proiecte naţionale şi internaţionale, precum TELplus, Manuscriptorium, Rediscover ş.a.</p>
+				<h1>Misiunea</h1>
+				<p><b><i>Misiunea Bibliotecii Olympus</i></b><br>
+				<br>
+				Biblioteca Olympus are ca misiune identificarea, dezvoltarea, organizarea, conservarea, cercetarea, comunicarea şi punerea în valoare a patrimoniului documentar naţional, precum şi a fondului Românica, fond ce reuneşte documente apărute în străinătate, referitoare la România şi la poporul român, publicaţii ale autorilor români apărute în străinătate în orice limbă, publicaţii în limba română ale autorilor străini apărute în străinătate.<br>
+				<br>
+				Organizează Depozitul Legal, principală sursă documentară în ceea ce priveşte cunoaşterea culturii şi civilizaţiei româneşti.<br>
+				<br>
+				Asigură accesul liber la colecţiile sale – parte esenţială a memoriei poporului român – atât generaţiei de azi, cât şi celor viitoare, în scop de educare, cercetare, studiu şi informare.<br>
+				<br></p>
+                </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

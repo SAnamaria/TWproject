@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="width=device-width" name="viewport"><!-- CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css"><!-- JAVASCRIPT -->
+
+	<script src="javascript/settings.js">
+	</script>
+	<script src="javascript/timer.js">
+	</script><!-- Phone -->
+	<link href="css/media-query-phone.css" media="only screen and (min-width:320px) and (max-width:480px) and (orientation: portrait)" rel="stylesheet" type="text/css"><!-- Tablet -->
+	<link href="css/media-query-tablet.css" media="only screen and (min-width:768px) and (max-width:1024px)" rel="stylesheet" type="text/css">
+	<title>Biblioteca Olympus</title>
+	<link href="images/base/favicon.png" rel="shortcut icon" type="image/png">
+</head>
+<body onload="startTime(); playAudio('music/bensound-ukulele.mp3')">
+	<div id="timer"></div><button id="settings_button" onclick="formular()" title="setari"><img height="50" id="settings" src="images/base/Settings-icon.png" width="50"></button>
+	<div id="formatting">
+		<h2 align="center">Formatarea paginii</h2><label><b>Alegeti culoarea fundalului:</b></label> <select id="option_background" name="background">
+			<option selected="selected" value=''>
+				Selecteaza culoarea
+			</option>
+			<option value="red">
+				Rosu
+			</option>
+			<option value="black">
+				Negru
+			</option>
+			<option value="green">
+				Verde
+			</option>
+			<option value="blue">
+				Albastru
+			</option>
+		</select><br>
+		<label for="size"><b>Marime scris:</b></label> <input id="size" max="25" min="12" name="size" onmouseout="timeout()" type="number"><br>
+		<button id="submit_settings" onclick="formatare()" type="submit">Submit</button>
+	</div>
+	<div id="text-size">
+		<div class="container">
+			<div class="banner">
+				<div class="content">
+					<h1 id="title"><a href="index.html">Biblioteca Olympus</a></h1>
+					<center>
+						<nav id="primary_nav_wrap">
+							<ul>
+								<li>
+									<a href="about.html">Despre noi</a>
+								</li>
+								<li>
+									<a href="evenimente.html">Evenimente</a>
+								</li>
+								<li>
+									<a>Categorii</a>
+									<ul>
+										<li>
+											<a href="fantasy.html">Fantasy</a>
+										</li>
+										<li>
+											<a href="comedy.html">Comedie</a>
+										</li>
+										<li>
+											<a href="romance.html">Romantic</a>
+										</li>
+										<li>
+											<a href="bio.html">Biografii</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="form.html">Inregistreaza-te!</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</center><br>
+					<br>
+				</div>
+			</div>
+			<div id="leftnav">
+				<h3>Orar</h3>
+				<ul>
+					<li>Luni: 9:00-19:00</li>
+					<li>Marti: 9:00-19:00</li>
+					<li>Miercuri: 9:00-19:00</li>
+					<li>Joi: 9:00-19:00</li>
+					<li>Vineri: 9:00-19:00</li>
+					<li>Sambata: 10:00-19:00</li>
+					<li>Duminica: INCHIS</li>
+				</ul>
+			</div>
+			<div id="main">
+				<p></p>
+				<h1>Noutati</h1>
+				<h6>07 noiembrie 2019</h6>
+				<p>În perioada 08-20 noiembrie 2019, va fi deschis Salonul Național de Arte Vizuale organizat de asociația culturală ARTAR.<br>
+				<br>
+				Vernisajul va avea loc sâmbătă, 9 noiembrie 2019, de la ora 14:00.<br>
+				<br>
+				Program de vizitare: luni, miercuri și vineri, între orele 08:00-18:00, marți și joi, între orele 08:00-20:00 şi sâmbăta, între orele 09:00-17:00.<br>
+				<br>
+				Intrarea este liberă.</p>
+				<h6>28 octombrie 2019</h6>
+				<p><b>Istoria şi societatea Imperiului Otoman reflectate în mărturii documentare din Colecţiile Speciale ale Bibliotecii Olympus</b><br>
+				<br>
+				Joi, 24 octombrie 2019, în cadrul programului de promovare a patrimoniului documentar deţinut de Biblioteca Olympus, a avut loc un eveniment organizat cu susţinerea Agenţiei de Colaborare şi Coordonare Turcă (TIKA), manifestarea bucurându-se de un mare interes din partea reprezentanţilor comunităţii turce şi tătare din România.<br>
+				<br>
+				Expoziţia „Istoria şi societatea Imperiului Otoman reflectate în mărturii documentare din Colecţiile Speciale ale Bibliotecii Olympus” s-a concentrat asupra fundamentelor istorice şi ale vieţii culturale otomane, propunându-şi să redea, prin intermediul unor lucrări de seamă, imaginea prodigioasei civilizaţii care a înflorit la confluenţa celor două continente, Europa şi Asia.<br>
+				<br>
+				Curator: Andreea Răsboiu – Serviciul Colecţii Speciale.</p>
+				<p></p>
+				<h6>25 octombrie 2019</h6>
+				<p><b>„O mie nouă sute optzeci și patru” de George Orwell, în dezbaterea Clubului de lectură Calderon la Biblioteca Olympus</b><br>
+				<br>
+				Sâmbătă, 26 octombrie 2019, de la ora 16:00, va avea loc o nouă ședință a Clubului de lectură Calderon la Biblioteca Olympus (sala de conferințe Mircea Vulcănescu, parter).<br>
+				<br>
+				În dezbatere: romanul scriitorului britanic George Orwell, „O mie nouă sute optzeci și patru”.<br>
+				<br>
+				<br>
+				Participarea la ședințele Clubului de lectură Calderon la Biblioteca Olympus este liberă, pe baza înscrierii făcute în prealabil, la adresa: info@calderon.at.</p>
+				<p></p>
+				<p></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

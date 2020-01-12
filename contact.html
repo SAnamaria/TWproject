@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><!-- CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css"><!-- JAVASCRIPT -->
+
+	<script src="javascript/settings.js">
+	</script>
+	<script src="javascript/timer.js">
+	</script><!-- Phone -->
+	<link href="css/media-query-phone.css" media="only screen and (min-width:320px) and (max-width:480px) and (orientation: portrait)" rel="stylesheet" type="text/css"><!-- Tablet -->
+	<link href="css/media-query-tablet.css" media="only screen and (min-width:768px) and (max-width:1024px)" rel="stylesheet" type="text/css">
+	<title>Biblioteca Olympus</title>
+	<link href="images/base/favicon.png" rel="shortcut icon" type="image/png">
+</head>
+<body onload="startTime()">
+	<div id="timer"></div><button id="settings_button" onclick="formular()" title="setari"><img height="50" id="settings" src="images/base/Settings-icon.png" width="50"></button>
+	<div id="formatting">
+		<h2 align="center">Formatarea paginii</h2><label><b>Alegeti culoarea fundalului:</b></label> <select id="option_background" name="background">
+			<option selected="selected" value=''>
+				Selecteaza culoarea
+			</option>
+			<option value="red">
+				Rosu
+			</option>
+			<option value="black">
+				Negru
+			</option>
+			<option value="green">
+				Verde
+			</option>
+			<option value="blue">
+				Albastru
+			</option>
+		</select><br>
+		<label for="size"><b>Marime scris:</b></label> <input id="size" max="25" min="12" name="size" onmouseout="timeout()" type="number"><br>
+		<button id="submit_settings" onclick="formatare()" type="submit">Submit</button>
+	</div>
+	<div id="text-size">
+		<div class="container">
+			<div class="banner">
+				<div class="content">
+					<h1 id="title"><a href="index.html">Biblioteca Olympus</a></h1>
+					<center>
+						<nav id="primary_nav_wrap">
+							<ul>
+								<li>
+									<a href="about.html">Despre noi</a>
+								</li>
+								<li>
+									<a href="evenimente.html">Evenimente</a>
+								</li>
+								<li>
+									<a>Categorii</a>
+									<ul>
+										<li>
+											<a href="fantasy.html">Fantasy</a>
+										</li>
+										<li>
+											<a href="comedy.html">Comedie</a>
+										</li>
+										<li>
+											<a href="romance.html">Romantic</a>
+										</li>
+										<li>
+											<a href="bio.html">Biografii</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="form.html">Inregistreaza-te!</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</center><br>
+					<br>
+				</div>
+			</div>
+			<div id="leftnav">
+				<h3>Orar</h3>
+				<ul>
+					<li>Luni: 9:00-19:00</li>
+					<li>Marti: 9:00-19:00</li>
+					<li>Miercuri: 9:00-19:00</li>
+					<li>Joi: 9:00-19:00</li>
+					<li>Vineri: 9:00-19:00</li>
+					<li>Sambata: 10:00-19:00</li>
+					<li>Duminica: INCHIS</li>
+				</ul>
+			</div>
+			<div id="main">
+				<a class="grow" href="#"><img class="imgleft" src="images/library/library.jpg" width="300px"></a>
+				<p><i>Bucureşti, Bd.Unirii nr. 22, sector 3, Cod poștal 030833, Of. poștal nr. 4</i><br>
+				<br>
+				Pentru plata serviciilor oferite, aprobate prin Ordinul 2130/29.02.2016, folosiți următoarele conturi:<br>
+				<br>
+				<br>
+				<br>
+				Utilizatori din România:<br>
+				Cont bancar: XXXXXXXXXXXXXXXX<br>
+				TREZORERIE SECTOR 3<br>
+				<br>
+				<br>
+				Utilizatori din străinătate:<br>
+				Cont bancar: XXXXXXXXXXXXXXXX CONT EURO<br>
+				Cont bancar: XXXXXXXXXXXXXXXX CONT USD<br>
+				BANCA COMERCIALĂ ROMÂNĂ<br>
+				<br>
+				<br>
+				<a class="grow" href="#"><img class="imgright" src="images/library/library2.jpg" width="300px"></a> Secretariat. Registratură. Arhivă<br>
+				Telefon: 0213142434/1002<br>
+				Fax: 0213123381<br>
+				E-mail: biblioteca@bibnat.ro<br>
+				<br>
+				<br>
+				Program: Marți, Joi: 8.00-10.00; 14.00-15.00<br>
+				<br>
+				<br>
+				Informații despre evenimente culturale<br>
+				Telefon: 0213142434/1039<br>
+				E-mail: promovare@bibnat.ro<br>
+				<br>
+				<br>
+				Informații ISBN<br>
+				Telefon: 0213112635<br>
+				E-mail: isbn@bibnat.ro<br>
+				<br>
+				<br>
+				Informații ISMN<br>
+				Telefon: 0213112635<br>
+				E-mail: ismn@bibnat.ro<br>
+				<br>
+				<br>
+				<a class="grow" href="#"><img class="imgleft" src="images/library/library1.jpg" width="300px"></a> Informații ISSN<br>
+				Telefon: 0213124990<br>
+				E-mail: issn@bibnat.ro<br>
+				<br>
+				Informatii pentru utilizatori<br>
+				Tel.: 0213142434/1064; 0213174711<br>
+				E-mail: comunicarea.colectiilor@bibnat.ro</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

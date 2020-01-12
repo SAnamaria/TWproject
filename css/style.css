@@ -1,0 +1,112 @@
+@charset "utf-8";
+#main p, h6, h1, h4 {
+	margin-left: 100px;
+	margin-right: 45px;
+}
+#main h6 {
+	background: #fe921f;
+	color: #ffffff;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	letter-spacing: 1px;
+	margin: 0 0 30px;
+	padding: 10px 15px 8px;
+	text-transform: uppercase;
+}
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: blink;
+	color: #FFF;
+}
+a:active {
+	text-decoration: none;
+}
+#title {
+	padding-top: 50px;
+	color: #FFF;
+	text-shadow: #000 6px 4px 0;
+	text-align: center;
+}
+.imgleft {
+	float: left;
+	margin: 5px 15px 10px 0px;
+	padding: 10px;
+}
+.imgright {
+	float: right;
+	margin: 5px 15px 10px 10px;
+	padding: 10px;
+}
+.grow:hover {}
+a.grow:hover img {
+	width: 600px;
+}
+#myinput {
+	background-color: white;
+	background-image: url(../images/base/searchicon.png);
+	background-position: 2px 2px;
+	background-size: 30px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+}
+<!-- SETTINGS -->
+#settings {
+	width: 40px;
+	height: 40px;
+	float: right;
+}
+#settings_button {
+	background: none;
+	box-shadow: none;
+	float: right;
+	border: none;
+}
+#formatting {
+	position: absolute;
+	background-color: #000;
+	color: #FFF;
+	left: 500px;
+	top: 200px;
+	visibility: hidden;
+	width: 500px;
+}
+#option_background {
+	width: 98%;
+	height: 50px;
+	padding: 15px;
+	margin: 5px 0 20px 5px;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+	text-align: center;
+}
+#submit_settings {
+	width: 98%;
+	height: 50px;
+	margin: 5px 0 5px 5px;
+}
+#size {
+	height: 10px;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+/* FOR THE TIME ON THE LEFT CORNER */
+#timer {
+	float: left;
+	position: absolute;
+	width: 70px;
+	border: #000 dotted;
+}

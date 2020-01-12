@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><!-- CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="css/events.css" rel="stylesheet" type="text/css"><!-- JAVASCRIPT -->
+
+	<script src="javascript/settings.js">
+	</script>
+	<script src="javascript/timer.js">
+	</script><!-- Phone -->
+	<link href="css/media-query-phone.css" media="only screen and (min-width:320px) and (max-width:480px) and (orientation: portrait)" rel="stylesheet" type="text/css"><!-- Tablet -->
+	<link href="css/media-query-tablet.css" media="only screen and (min-width:768px) and (max-width:1024px)" rel="stylesheet" type="text/css">
+	<title>Biblioteca Olympus</title>
+	<link href="images/base/favicon.png" rel="shortcut icon" type="image/png">
+</head>
+<body onload="startTime()">
+	<div id="timer"></div><button id="settings_button" onclick="formular()" title="setari"><img height="50" id="settings" src="images/base/Settings-icon.png" width="50"></button>
+	<div id="formatting">
+		<h2 align="center">Formatarea paginii</h2><label><b>Alegeti culoarea fundalului:</b></label> <select id="option_background" name="background">
+			<option selected="selected" value=''>
+				Selecteaza culoarea
+			</option>
+			<option value="red">
+				Rosu
+			</option>
+			<option value="black">
+				Negru
+			</option>
+			<option value="green">
+				Verde
+			</option>
+			<option value="blue">
+				Albastru
+			</option>
+		</select><br>
+		<label for="size"><b>Marime scris:</b></label> <input id="size" max="25" min="12" name="size" onmouseout="timeout()" type="number"><br>
+		<button id="submit_settings" onclick="formatare()" type="submit">Submit</button>
+	</div>
+	<div id="text-size">
+		<div class="container">
+			<div class="banner">
+				<div class="content">
+					<h1 id="title"><a href="index.html">Biblioteca Olympus</a></h1>
+					<center>
+						<nav id="primary_nav_wrap">
+							<ul>
+								<li>
+									<a href="about.html">Despre noi</a>
+								</li>
+								<li>
+									<a href="evenimente.html">Evenimente</a>
+								</li>
+								<li>
+									<a>Categorii</a>
+									<ul>
+										<li>
+											<a href="fantasy.html">Fantasy</a>
+										</li>
+										<li>
+											<a href="comedy.html">Comedie</a>
+										</li>
+										<li>
+											<a href="romance.html">Romantic</a>
+										</li>
+										<li>
+											<a href="bio.html">Biografii</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="form.html">Inregistreaza-te!</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</center><br>
+					<br>
+				</div>
+			</div>
+			<div id="leftnav">
+				<h3>Orar</h3>
+				<ul>
+					<li>Luni: 9:00-19:00</li>
+					<li>Marti: 9:00-19:00</li>
+					<li>Miercuri: 9:00-19:00</li>
+					<li>Joi: 9:00-19:00</li>
+					<li>Vineri: 9:00-19:00</li>
+					<li>Sambata: 10:00-19:00</li>
+					<li>Duminica: INCHIS</li>
+				</ul>
+			</div>
+			<div id="main">
+				<h3 align="center" style="font-family: Verdana, Geneva, sans-serif">Evenimente</h3>
+				<table class="events">
+					<tr>
+						<td class="tableimg"><img src="images/events/event1.jpg" width="73"></td>
+						<td class="descevent">
+							<div align="left">
+								<span><b>Ţările Române în lumina tiparului european: Repere bibliofile din secolele XV-XVIII, aflate în patrimoniul Bibliotecii Olympus</b><br>
+								<i>Loc: Expoziţie virtuală<br>
+								Data: din 18 decembrie 2018</i></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td height="50px"></td>
+					</tr>
+					<tr>
+						<td class="tableimg"><img src="images/events/event2.jpg"></td>
+						<td class="descevent"><span><b>România în Primul Război Mondial (1916-1918): Pe drumul spre Marea Unire. Expoziție</b><br>
+						<i>Loc: spațiile expoziţionale Dealul Spirii, Fântâna cu Zodiac, Puțul cu apă rece, Podu’ Vechi – mezanin<br>
+						Data: 11 decembrie 2018 – 11 decembrie 2019</i></span></td>
+					</tr>
+					<tr>
+						<td height="50px"></td>
+					</tr>
+					<tr>
+						<td class="tableimg"><img src="images/events/event3.jpg"></td>
+						<td class="descevent"><span><b>Un ctitor uitat al teatrului românesc - Aristizza Romanescu (1854-1918) în Colecţiile Speciale ale Bibliotecii Olympus</b><br>
+						<i>Loc: Expoziție virtuală<br>
+						Data: din 11 iunie 2018</i></span></td>
+					</tr>
+					<tr>
+						<td height="50px"></td>
+					</tr>
+					<tr>
+						<td class="tableimg"><img src="images/events/event4.jpg"></td>
+						<td class="descevent"><span><b>Oraşe europene în secolul al XVIII-lea: Hărţi şi atlase din Cabinetul de Cartografie al Bibliotecii Olympus</b><br>
+						<i>Loc: Expoziție virtuală<br>
+						Data: din 28 februarie 2018</i></span></td>
+					</tr>
+					<tr>
+						<td height="50px"></td>
+					</tr>
+					<tr>
+						<td class="tableimg"><img src="images/events/event5.jpg"></td>
+						<td class="descevent"><span><b>Personalitatea lui Titu Maiorescu în documentele din Colecţiile Speciale ale Bibliotecii Olympus, 1917-2017</b><br>
+						<i>Loc: Expoziție virtuală<br>
+						Data: din 29 iulie 2017</i></span></td>
+					</tr>
+					<tr>
+						<td height="50px"></td>
+					</tr>
+					<tr>
+						<td class="tableimg"><img src="images/events/event6.jpg"></td>
+						<td class="descevent"><span><b>Sub semnul Compasului de Aur: tipărituri plantiniene din Colecţiile Speciale ale Bibliotecii Olympus</b><br>
+						<i>Loc: Expoziție virtuală<br>
+						Data: din 25 noiembrie 2016</i></span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

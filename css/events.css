@@ -1,0 +1,15 @@
+@charset "utf-8";
+.events {
+	margin-left: 70px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+.eventsphone {
+	display: none;
+}
+.tableimg {
+	width: 100px;
+}
+.descevent {
+	width: 500px;
+}

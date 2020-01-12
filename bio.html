@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><!-- CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="css/gallery.css" rel="stylesheet" type="text/css">
+    <!-- JAVASCRIPT -->
+	<script src="javascript/search.js" type="text/javascript">
+	</script>
+	<script src="javascript/settings.js">
+	</script>
+	<script src="javascript/timer.js">
+	</script>
+    <!-- Phone -->
+	<link href="css/media-query-phone.css" media="only screen and (min-width:320px) and (max-width:480px) and (orientation: portrait)" rel="stylesheet" type="text/css">
+    <!-- Tablet -->
+	<link href="css/media-query-tablet.css" media="only screen and (min-width:768px) and (max-width:1024px)" rel="stylesheet" type="text/css">
+	<title>Biblioteca Olympus</title>
+	<link href="images/base/favicon.png" rel="shortcut icon" type="image/png">
+</head>
+<body onload="startTime()">
+	<div id="timer"></div>
+	<div class="container">
+		<div class="banner">
+			<div class="content">
+				<h1 id="title"><a href="index.html">Biblioteca Olympus</a></h1>
+				<center>
+					<nav id="primary_nav_wrap">
+						<ul>
+							<li>
+								<a href="about.html">Despre noi</a>
+							</li>
+							<li>
+								<a href="evenimente.html">Evenimente</a>
+							</li>
+							<li>
+								<a>Categorii</a>
+								<ul>
+									<li>
+										<a href="fantasy.html">Fantasy</a>
+									</li>
+									<li>
+										<a href="comedy.html">Comedie</a>
+									</li>
+									<li>
+										<a href="romance.html">Romantic</a>
+									</li>
+									<li>
+										<a href="bio.html">Biografii</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="form.html">Inregistreaza-te!</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</center><br>
+				<br>
+				<center>
+					<div class="topnav">
+						<input id="myinput" name="search" onkeyup="searchFunction()" placeholder="Search..." type="text">
+					</div>
+				</center>
+			</div>
+		</div>
+        
+
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/43682552-how-we-fight-for-our-lives" target="_blank"><img alt="How We Fight For Our Lives by Saeed Jones " class="imgphone" src="images/biography/howwefightforourlives.jpg"> <span class="bookdesc">From award-winning poet Saeed Jones, How We Fight for Our Lives is a stunning coming-of-age memoir written at the crossroads of sex, race, and power.<br>
+				“People don’t just happen,” writes Saeed Jones. “We sacrifice former versions of ourselves. We sacrifice the people who dared to raise us. The ‘I’ it seems doesn’t exist until we are able to say, ‘I am no longer yours.’ ”</span></a> 
+			</div>
+			<div class="desc">
+				<div id="try">How We Fight For Our Lives<br>
+				by Saeed Jones</div>
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/43314707-unfollow" target="_blank"><img alt="Unfollow: A Journey from Hatred to Hope by Megan Phelps-Roper" src="images/biography/unfollow.jpg"></a> <span class="bookdesc">As featured on the BBC documentary, 'The Most Hated Family in America' it was an upbringing in many ways normal. A loving home, shared with squabbling siblings, overseen by devoted parents. Yet in other ways it was the precise opposite: a revolving door of TV camera crews and documentary makers, a world of extreme discipline, of siblings vanishing in the night.</span>
+			</div>
+			<div class="desc">
+				Unfollow: A Journey from Hatred to Hope<br>
+				by Megan Phelps-Roper
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/43811321-things-we-didn-t-talk-about-when-i-was-a-girl" target="_blank"><img alt="Things We Didn't Talk About When I Was a Girl: A Memoir by Jeannie Vanasco" src="images/biography/thingswedidnttalkabout.jpg"></a> <span class="bookdesc">Jeannie Vanasco has had the same nightmare since she was a teenager. She startles awake, saying his name. It is always about him: one of her closest high school friends, a boy named Mark. A boy who raped her.</span>
+			</div>
+			<div class="desc">
+				Things We Didn't Talk About When I Was a Girl: A Memoir<br>
+				by Jeannie Vanasco
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/33832019-the-queens-of-animation" target="_blank"><img alt="The Queens of Animation by Nathalia Holt" src="images/biography/thequeensofanimations.jpg"></a> <span class="bookdesc">In The Queens of Animation, bestselling author Nathalia Holt recounts the dramatic stories of an incredibly influential group of women who have slipped under the radar for decades but have touched all our lives. These women infiltrated the all-male domain of Disney Studios and used early technologies to create the rich artwork and iconic storylines that would reach millions of viewers across generations. Over the decades–while battling sexism, domestic abuse, and workplace harassment–these women also fought to influence the way female characters are depicted to young audiences.</span>
+			</div>
+			<div class="desc">
+				The Queens of Animation<br>
+				by Nathalia Holt
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/43984882-edison" target="_blank"><img alt="Edison by Edmund Morris" src="images/biography/edison.jpg"></a> <span class="bookdesc">From Pulitzer Prize-winning author Edmund Morris comes a revelatory new biography of Thomas Alva Edison, the most prolific genius in American history.</span>
+			</div>
+			<div class="desc">
+				Edison<br>
+				by Edmund Morris
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/43886044-initiated" target="_blank"><img alt="Initiated: Memoir of a Witch by Amanda Yates Garcia" src="images/biography/initiated.jpg"></a> <span class="bookdesc">An initiation signals a beginning: a door opens and you step through. Traditional Wiccan initiates are usually brought into the craft through a ceremony with a High Priestess. But even though Amanda Yates Garcia's mother, a practicing witch herself, initiated her into the earth-centered practice of witchcraft when she was 13 years old, Amanda's real life as a witch only began when she underwent a series of spontaneous initiations of her own.</span>
+			</div>
+			<div class="desc">
+				Initiated: Memoir of a WitchPumpkinheads<br>
+				by Amanda Yates Garcia
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/35133922-educated" target="_blank"><img alt="Educated by Tara Westover" src="images/biography/educated.jpg"></a> <span class="bookdesc">Tara Westover was 17 the first time she set foot in a classroom. Born to survivalists in the mountains of Idaho, she prepared for the end of the world by stockpiling home-canned peaches and sleeping with her "head-for-the-hills bag". In the summer she stewed herbs for her mother, a midwife and healer, and in the winter she salvaged in her father's junkyard.</span>
+			</div>
+			<div class="desc">
+				Educated<br>
+				by Tara Westover
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/42932929-the-prison-doctor" target="_blank"><img alt="The Prison Doctor by Amanda Brown" src="images/biography/theprisondoctor.jpg"></a> <span class="bookdesc">Dr Amanda Brown has treated inmates in the UK’s most infamous prisons – first in young offenders’ institutions, then at the notorious Wormwood Scrubs and finally at Europe’s largest women-only prison in Europe, Bronzefield. From miraculous pregnancies to dirty protests, and from violent attacks on prisoners to heartbreaking acts of self-harm, she has witnessed it all. In this memoir, Amanda reveals the stories, the patients and the cases that have shaped a career helping those most of us would rather forget.</span>
+			</div>
+			<div class="desc">
+				The Prison Doctor<br>
+				by Amanda Brown
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/20910157-yes-please" target="_blank"><img alt="Yes Please by Amy Poehler" src="images/biography/yesplease.jpg"></a> <span class="bookdesc">In Amy Poehler’s highly anticipated first book, Yes Please, she offers up a big juicy stew of personal stories, funny bits on sex and love and friendship and parenthood and real life advice (some useful, some not so much), like when to be funny and when to be serious. Powered by Amy’s charming and hilarious, biting yet wise voice, Yes Please is a book full of words to live by.</span>
+			</div>
+			<div class="desc">
+				Yes Please<br>
+				by Amy Poehler
+			</div>
+		</div>
+	</div>
+</body>
+</html>

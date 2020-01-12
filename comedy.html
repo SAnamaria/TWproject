@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><!-- CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="css/gallery.css" rel="stylesheet" type="text/css"><!-- JAVASCRIPT -->
+
+	<script src="javascript/search.js" type="text/javascript">
+	</script>
+	<script src="javascript/settings.js">
+	</script>
+	<script src="javascript/timer.js">
+	</script><!-- Phone -->
+	<link href="css/media-query-phone.css" media="only screen and (min-width:320px) and (max-width:480px) and (orientation: portrait)" rel="stylesheet" type="text/css"><!-- Tablet -->
+	<link href="css/media-query-tablet.css" media="only screen and (min-width:768px) and (max-width:1024px)" rel="stylesheet" type="text/css">
+	<title>Biblioteca Olympus</title>
+	<link href="images/base/favicon.png" rel="shortcut icon" type="image/png">
+</head>
+<body onload="startTime()">
+	<div id="timer"></div>
+	<div class="container">
+		<div class="banner">
+			<div class="content">
+				<h1 id="title"><a href="index.html">Biblioteca Olympus</a></h1>
+				<center>
+					<nav id="primary_nav_wrap">
+						<ul>
+							<li>
+								<a href="about.html">Despre noi</a>
+							</li>
+							<li>
+								<a href="evenimente.html">Evenimente</a>
+							</li>
+							<li>
+								<a>Categorii</a>
+								<ul>
+									<li>
+										<a href="fantasy.html">Fantasy</a>
+									</li>
+									<li>
+										<a href="comedy.html">Comedie</a>
+									</li>
+									<li>
+										<a href="romance.html">Romantic</a>
+									</li>
+									<li>
+										<a href="bio.html">Biografii</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="form.html">Inregistreaza-te!</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</center><br>
+				<br>
+				<center>
+					<div class="topnav">
+						<input id="myinput" name="search" onkeyup="searchFunction()" placeholder="Search..." type="text">
+					</div>
+				</center>
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/44294948-bury-my-heart-at-chuck-e-cheese-s" target="_blank"><img alt="Bury My Heart at Chuck E. Cheese's by Tiffany Midge" src="images/comedy/burymyheartatchuckecheesess.jpg"> <span class="bookdesc">Bury My Heart at Chuck E. Cheese’s is a powerful and compelling collection of Tiffany Midge’s musings on life, politics, and identity as a Native woman in America. Artfully blending sly humor, social commentary, and meditations on love and loss, Midge weaves short, stand-alone musings into a memoir that stares down colonialism while chastising hipsters for abusing pumpkin spice. She explains why she does not like pussy hats, mercilessly dismantles pretendians, and confesses her own struggles with white-bread privilege.</span></a>
+			</div>
+			<div class="desc">
+				Bury My Heart at Chuck E. Cheese's<br>
+				by Tiffany Midge
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/42086897-how-to" target="_blank"><img alt="How To: Absurd Scientific Advice for Common Real-World Problems by Randall Munroe" src="images/comedy/howto.jpg"></a> <span class="bookdesc">How To is an instruction manual for taking everyday problems and using science and creative thinking to turn them into much bigger and more exciting problems. It teaches you how to cross a river by boiling it, outlines some of the many uses for lava around the home, and walks you through how to use experimental military research to ensure that your friends will never again ask you to help them move.</span>
+			</div>
+			<div class="desc">
+				How To: Absurd Scientific Advice for Common Real-World Problems<br>
+				by Randall Munroe
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/29864343-rich-people-problems" target="_blank"><img alt="Rich People Problems by Kevin Kwan" src="images/comedy/richpeopleproblems.jpg"></a> <span class="bookdesc">Kevin Kwan, bestselling author of Crazy Rich Asians and China Rich Girlfriend, is back with an uproarious new novel featuring a family driven by fortune, an ex-wife driven psychotic with jealousy, a battle royal fought through couture-gown sabotage, and the heir to one of Asia's greatest fortunes locked out of his inheritance.</span>
+			</div>
+			<div class="desc">
+				Rich People Problems<br>
+				(Crazy Rich Asians #3)<br>
+				by Kevin Kwan
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/43263670-do-you-mind-if-i-cancel" target="_blank"><img alt="Do You Mind If I Cancel? by Gary Janetti" src="images/comedy/doyoumindificancel.jpg" width="300"></a> <span class="bookdesc">Gary Janetti, the writer and producer for some of the most popular television comedies of all time, and creator of one of the most wickedly funny Instagram accounts there is, now turns his skills to the page in a hilarious, and poignant book chronicling the pains and indignities of everyday life.</span>
+			</div>
+			<div class="desc">
+				Do You Mind If I Cancel? (Things That Still Annoy Me)<br>
+				by Gary Janetti
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/43822665-embrace-your-weird" target="_blank"><img alt="Embrace Your Weird by Felicia Day" src="images/comedy/embraceyourweird.jpg"></a> <span class="bookdesc">In Embrace Your Weird, New York Times bestselling author, producer, actress, TV writer, and award-winning web series creator, Felicia Day takes you on a journey to find, rekindle, or expand your creative passions.</span>
+			</div>
+			<div class="desc">
+				Embrace Your Weird: Face Your Fears and Unleash Creativity<br>
+				by Felicia Day
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/42660463-twas-the-nightshift-before-christmas" target="_blank"><img alt="Twas The Nightshift Before Christmas by Adam Kay" src="images/comedy/twasthenightshiftbeforechristmas.jpg"></a> <span class="bookdesc">Twas The Nightshift Before Christmas is the hilarious, poignant and entertaining story of the life of a junior doctor at the most challenging time of the year. With twenty-five tales of intriguing, shocking and incredible Christmas incidents, the British public will finally appreciate the sacrifices made and the challenges faced by the unsung heroes of the NHS.</span>
+			</div>
+			<div class="desc">
+				Twas The Nightshift Before Christmas<br>
+				by Adam Kay
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/28051013-wrecking-ball" target="_blank"><img alt="Wrecking Ball by Jeff Kinney" src="images/comedy/wreckingball.jpg"></a> <span class="bookdesc">In Wrecking Ball, Book 14 of the Diary of a Wimpy Kid series—from #1 international bestselling author Jeff Kinney—an unexpected inheritance gives the Heffley family a chance to make major improvements to their home. But they soon find that construction isn’t all it’s cracked up to be. When things get rough, will the Heffleys be able to stay . . . or will they be forced to move?</span>
+			</div>
+			<div class="desc">
+				Wrecking Ball<br>
+				(Diary of a Wimpy Kid #14)<br>
+				by Jeff Kinney
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/41555947-magic-for-liars?from_choice=true" target="_blank"><img alt="Murder Can Mess Up Your Masterpiece by Rose Pressey " src="images/comedy/murdercanmessupyourmasterpiece.jpg"></a> <span class="bookdesc">Artist Celeste Cabot welcomes the chance to show her paintings at a craft fair in her hometown of Gatlinburg, Tennessee, where she and her Chihuahua, Van Gogh, can park her vintage Shasta trailer and sell her creations, too.</span>
+			</div>
+			<div class="desc">
+				Murder Can Mess Up Your Masterpiece<br>
+				(Haunted Craft Fair Mysteries #1)<br>
+				by Rose Pressey
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="tooltip">
+				<a href="https://www.goodreads.com/book/show/42972028-the-man-that-got-away" target="_blank"><img alt="The Man That Got Away by Lynne Truss" src="images/comedy/themanthatgotaway.jpg"></a> <span class="bookdesc">In the second instalment of Lynne Truss's joyfully quirky crime series, our trio of detectives must investigate the murder of a hapless romantic; an aristocratic con man on the prowl; and a dodgy Brighton nightspot...</span>
+			</div>
+			<div class="desc">
+				The Man That Got Away<br>
+				(Constable Twitten #2)<br>
+				by Lynne Truss
+			</div>
+		</div>
+	</div>
+</body>
+</html>

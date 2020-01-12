@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="width=device-width" name="viewport"><!-- CSS  -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="css/form.css" rel="stylesheet" type="text/css"><!-- JAVASCRIPT -->
+
+	<script src="javascript/form.js">
+	</script>
+	<script src="javascript/settings.js">
+	</script>
+	<script src="javascript/timer.js">
+	</script><!-- Phone -->
+	<link href="css/media-query-phone.css" media="only screen and (min-width:320px) and (max-width:480px) and (orientation: portrait)" rel="stylesheet" type="text/css"><!-- Tablet -->
+	<link href="css/media-query-tablet.css" media="only screen and (min-width:768px) and (max-width:1024px)" rel="stylesheet" type="text/css">
+	<title>Biblioteca Olympus</title>
+	<link href="images/base/favicon.png" rel="shortcut icon" type="image/png">
+</head>
+<body onload="startTime()">
+	<!-- Actual time, only on this page-->
+	<div id="timer"></div><!-- SETTINGS STUFF only on this page until I figure it out-->
+	<button id="settings_button" onclick="formular()" title="setari"><img height="50" id="settings" src="images/base/Settings-icon.png" width="50"></button>
+	<div id="formatting">
+		<h2 align="center">Formatarea paginii</h2><label><b>Alegeti culoarea fundalului:</b></label> <select id="option_background" name="background">
+			<option selected="selected" value=''>
+				Selecteaza culoarea
+			</option>
+			<option value="red">
+				Rosu
+			</option>
+			<option value="black">
+				Negru
+			</option>
+			<option value="green">
+				Verde
+			</option>
+			<option value="blue">
+				Albastru
+			</option>
+		</select><br>
+		<label for="size"><b>Marime scris:</b></label> <input id="size" max="25" min="12" name="size" onmouseout="timeout()" type="number"><br>
+		<button id="submit_settings" onclick="formatare()" type="submit">Submit</button>
+	</div>
+	<div id="text-size">
+		<!-- END -->
+		<div class="container">
+			<div class="banner">
+				<div class="content">
+					<h1 id="title"><a href="index.html">Biblioteca Olympus</a></h1>
+					<center>
+						<nav id="primary_nav_wrap">
+							<ul>
+								<li>
+									<a href="about.html">Despre noi</a>
+								</li>
+								<li>
+									<a href="evenimente.html">Evenimente</a>
+								</li>
+								<li>
+									<a>Categorii</a>
+									<ul>
+										<li>
+											<a href="fantasy.html">Fantasy</a>
+										</li>
+										<li>
+											<a href="comedy.html">Comedie</a>
+										</li>
+										<li>
+											<a href="romance.html">Romantic</a>
+										</li>
+										<li>
+											<a href="bio.html">Biografii</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="form.html">Inregistreaza-te!</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</center><br>
+					<br>
+				</div>
+			</div>
+			<div id="leftnav">
+				<h3>Orar</h3>
+				<ul>
+					<li>Luni: 9:00-19:00</li>
+					<li>Marti: 9:00-19:00</li>
+					<li>Miercuri: 9:00-19:00</li>
+					<li>Joi: 9:00-19:00</li>
+					<li>Vineri: 9:00-19:00</li>
+					<li>Sambata: 10:00-19:00</li>
+					<li>Duminica: INCHIS</li>
+				</ul>
+			</div>
+			<div id="main">
+				<form id="inregistrare" method="post" name="inregistrare">
+					<div class="form">
+						<h1>Formular de inscriere</h1>
+						<hr>
+						<label for="gender"><b>Sexul dumneavoastra este:</b></label><br>
+						<input class="radio_inline" name="gender" type="radio" value="female"> Femeie <input class="radio_inline" name="gender" type="radio" value="male">Barbat <input class="radio_inline" name="gender" type="radio" value="other">Altul<br>
+						<label for="nume"><b>Nume</b></label> <input id="nume" name="nume" onkeyup="validateLastName()" placeholder="Nume" required="" type="text"><br>
+						<label for="prenume"><b>Prenume</b></label> <input id="prenume" name="prenume" onkeyup="validateName()" placeholder="Prenume" required="" type="text"><br>
+						<label for="varsta"><b>Varsta:</b></label> <input id="number" max="100" min="18" name="varsta" onkeyup="changeRangeValue1(this.value)" onmouseout="timeoutAge()" type="number"><br>
+						<input id="range" max="100" min="18" name="varsta" oninput="changeInputValue1(this.value)" type="range"><br>
+						<label for="email"><b>Email</b></label> <input name="email" id="email" placeholder="Adresa de email" required="" type="email" onMouseOut="validateEmail()"><br>
+						<label for="parola"><b>Parola</b></label> <input id="parola" name="parola" onkeyup="matchPass()" placeholder="Parola" required="" type="password"><br>
+						<label><b>Repeta parola</b></label> <input id="parola-repeat" name="parola-repeat" onkeyup="matchPass()" placeholder="Repeta parola" required="" type="password"><br>
+						<span id="confirm-message"></span><br>
+						<br>
+						<label><b>Alegeti orasul de resedinta:</b></label> <select id="option" name="orase">
+							<option selected="selected" value=''>
+								Selecteaza oras
+							</option>
+							<option value="constanta">
+								Constanta
+							</option>
+							<option value="bucuresti">
+								Bucuresti
+							</option>
+							<option value="timisoara">
+								Timisoara
+							</option>
+							<option value="sibiu">
+								Sibiu
+							</option>
+						</select>
+						<h3>Preferinte de informare:</h3><input name="newsletter" type="checkbox">Newsletter<br>
+						<input name="sms" type="checkbox">SMS<br>
+						<input name="email_pers" type="checkbox">E-mail personalizat<br>
+						<input name="sms_pers" type="checkbox">SMS personalizat<br>
+						<hr>
+						<input name="TermsandConditions" type="checkbox"> <small>By creating an account you agree to our <a class="registerform" href="#">Terms & Privacy</a>.</small><br>
+						<button class="registerbtn" onclick="validateForm()" type="submit">Creeaza cont</button>
+					</div>
+					<div class="signin">
+						<p>Ai deja cont? <a class="registerform" href="#">Conecteaza-te</a>.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
